@@ -1,0 +1,2371 @@
+ship = Untitled Space Craft
+version = 0.21.1
+description = 
+type = SPH
+PART
+{
+	part = mk2LanderCabin_4292967482
+	partName = Part
+	pos = -0.3469245,4.964401,-0.008626536
+	rot = -1.256074E-15,0.7071068,-0.7071068,-1.256074E-15
+	attRot = 0,0.9999999,-5.960464E-08,-1.776357E-15
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = Mk1FuselageStructural_4292960378
+	attN = bottom,Mk1FuselageStructural_4292960378
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = 
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292960378
+	partName = Strut
+	pos = -0.3469245,4.964401,1.344948
+	rot = 0.7071068,-2.117582E-22,1.368904E-22,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = Mk1FuselageStructural_4292960272
+	attN = top,Mk1FuselageStructural_4292960272
+	attN = bottom,mk2LanderCabin_4292967482
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292960272
+	partName = Strut
+	pos = -0.3469245,4.964401,3.232448
+	rot = 0.7071068,1.058791E-22,-3.743392E-23,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = Mk1FuselageStructural_4292960166
+	attN = top,Mk1FuselageStructural_4292960166
+	attN = bottom,Mk1FuselageStructural_4292960378
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292960166
+	partName = Strut
+	pos = -0.3469245,4.964402,5.119949
+	rot = 0.7071068,0,-7.165653E-23,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = Mk1FuselageStructural_4292960134
+	link = structuralIBeam3_4292959292
+	link = structuralIBeam3_4292959224
+	attN = top,Mk1FuselageStructural_4292960134
+	attN = bottom,Mk1FuselageStructural_4292960272
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292960134
+	partName = Strut
+	pos = -0.3469245,4.964402,7.007449
+	rot = 0.7071068,2.117582E-22,-1.401017E-22,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	attN = bottom,Mk1FuselageStructural_4292960166
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292959292
+	partName = Part
+	pos = -1.751114,4.964403,5.599181
+	rot = -0.7071068,0.7071068,-2.980232E-08,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = structuralIBeam3_4292959164
+	link = trussPiece1x_4292957428
+	sym = structuralIBeam3_4292959224
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292959164
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292959224
+	partName = Part
+	pos = 1.057265,4.964403,5.599181
+	rot = 0.7071069,0.7071068,0,-2.980232E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = structuralIBeam3_4292959028
+	link = trussPiece1x_4292955362
+	sym = structuralIBeam3_4292959292
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292959028
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292959164
+	partName = Part
+	pos = -3.356046,4.964403,5.599181
+	rot = 0.5,0.5000001,-0.5000001,0.5000001
+	attRot = -4.996004E-16,0.7071067,-4.214685E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = structuralIBeam3_4292958968
+	link = trussPiece1x_4292943040
+	sym = structuralIBeam3_4292959028
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292959292
+	attN = bottom,structuralIBeam3_4292958968
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292959028
+	partName = Part
+	pos = 2.662197,4.964402,5.599181
+	rot = 0.5,-0.5000001,0.5000002,0.5000001
+	attRot = 4.996004E-16,-0.7071067,4.214685E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = structuralIBeam3_4292958674
+	link = trussPiece1x_4292955420
+	sym = structuralIBeam3_4292959164
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292959224
+	attN = bottom,structuralIBeam3_4292958674
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292958968
+	partName = Part
+	pos = -4.960978,4.964403,5.599182
+	rot = -0.5,0.5000001,0.4999999,0.5000001
+	attRot = -0.7071067,4.214684E-08,0.7071067,2.994714E-22
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = structuralIBeam3_4292958944
+	link = trussPiece1x_4292944608
+	sym = structuralIBeam3_4292958674
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292958944
+	attN = bottom,structuralIBeam3_4292959164
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292958944
+	partName = Part
+	pos = -6.565908,4.964403,5.599182
+	rot = 0.707107,0.7071068,0,0
+	attRot = -4.996004E-16,0.7071067,-4.214685E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = trussPiece1x_4292956954
+	sym = structuralIBeam3_4292958650
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292958968
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292958674
+	partName = Part
+	pos = 4.267128,4.964402,5.599182
+	rot = 0.5000001,0.5000001,0.5,-0.5000002
+	attRot = 0.7071067,-4.214684E-08,-0.7071067,2.994714E-22
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = structuralIBeam3_4292958650
+	link = trussPiece1x_4292955896
+	sym = structuralIBeam3_4292958968
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292958650
+	attN = bottom,structuralIBeam3_4292959028
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralIBeam3_4292958650
+	partName = Part
+	pos = 5.872059,4.964401,5.599182
+	rot = 0.7071069,-0.7071068,-1.788139E-07,-8.940697E-08
+	attRot = -4.996004E-16,0.7071067,-4.214685E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = trussPiece1x_4292956788
+	sym = structuralIBeam3_4292958944
+	srfN = srfAttach,Mk1FuselageStructural_4292960166
+	attN = top,structuralIBeam3_4292958674
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292956954
+	partName = Part
+	pos = -6.616032,5.435783,6.074437
+	rot = -0.1617293,0.8373194,0.3904479,-0.3468292
+	attRot = 0.161729,-0.3904484,0.3468291,-0.8373193
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292951416
+	sym = trussPiece1x_4292956788
+	srfN = srfAttach,structuralIBeam3_4292958944
+	attN = top,stackSeparator_4292951416
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292956788
+	partName = Part
+	pos = 5.922182,5.435782,6.074436
+	rot = 0.1617293,0.8373194,0.3904479,0.3468293
+	attRot = -0.161729,0.3904484,-0.3468291,-0.8373193
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292951816
+	sym = trussPiece1x_4292956954
+	srfN = srfAttach,structuralIBeam3_4292958650
+	attN = top,stackSeparator_4292951816
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292957428
+	partName = Part
+	pos = -1.94287,5.420641,6.12961
+	rot = 0.3830223,0.3830222,0.1786063,0.8213939
+	attRot = -0.1169778,0.3213939,-0.3213939,0.8830224
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292949868
+	sym = trussPiece1x_4292955362
+	srfN = srfAttach,structuralIBeam3_4292959292
+	attN = top,stackSeparator_4292949868
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292955362
+	partName = Part
+	pos = 1.249021,5.420641,6.12961
+	rot = 0.3830223,-0.3830223,-0.1786063,0.8213939
+	attRot = 0.1169778,-0.3213939,0.3213939,0.8830224
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292949468
+	sym = trussPiece1x_4292957428
+	srfN = srfAttach,structuralIBeam3_4292959224
+	attN = top,stackSeparator_4292949468
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = stackSeparator_4292951816
+	partName = Part
+	pos = 5.922184,5.913104,6.643285
+	rot = 0.4226179,2.844912E-07,-2.21271E-07,0.9063081
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 4
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292946932
+	sym = stackSeparator_4292951416
+	attN = bottom,trussPiece1x_4292956788
+	attN = top,Mk1FuselageStructural_4292946932
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = stackSeparator_4292951416
+	partName = Part
+	pos = -6.616033,5.913104,6.643286
+	rot = 0.422618,-2.423444E-07,1.369772E-07,0.9063081
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 5
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292946640
+	sym = stackSeparator_4292951816
+	attN = bottom,trussPiece1x_4292956954
+	attN = top,Mk1FuselageStructural_4292946640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = stackSeparator_4292949868
+	partName = Part
+	pos = -1.94287,5.897962,6.69846
+	rot = 0.4226183,4.214685E-08,-1.776357E-15,0.9063079
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 2
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292945554
+	sym = stackSeparator_4292949468
+	attN = bottom,trussPiece1x_4292957428
+	attN = top,Mk1FuselageStructural_4292945554
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = stackSeparator_4292949468
+	partName = Part
+	pos = 1.249021,5.897962,6.69846
+	rot = 0.4226184,-1.053671E-08,3.161013E-08,0.9063079
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 3
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292945998
+	sym = stackSeparator_4292949868
+	attN = bottom,trussPiece1x_4292955362
+	attN = top,Mk1FuselageStructural_4292945998
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292946932
+	partName = Strut
+	pos = 5.922185,6.641578,7.511448
+	rot = 0.4226183,2.107342E-08,-2.107343E-08,0.9063079
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292933962
+	link = sepMotor1_4292932764
+	sym = Mk1FuselageStructural_4292946640
+	attN = bottom,stackSeparator_4292951816
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292946640
+	partName = Strut
+	pos = -6.616034,6.64158,7.51145
+	rot = 0.4226184,-4.214685E-08,8.42937E-08,0.9063079
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292934398
+	link = sepMotor1_4292933010
+	sym = Mk1FuselageStructural_4292946932
+	attN = bottom,stackSeparator_4292951416
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292945998
+	partName = Strut
+	pos = 1.24902,6.626438,7.566623
+	rot = 0.4226183,1.053671E-08,-3.161014E-08,0.9063079
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292931974
+	link = sepMotor1_4292931320
+	sym = Mk1FuselageStructural_4292945554
+	attN = bottom,stackSeparator_4292949468
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292945554
+	partName = Strut
+	pos = -1.942869,6.626438,7.566625
+	rot = 0.4226184,-1.058791E-22,2.646978E-23,0.9063079
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292932056
+	link = sepMotor1_4292931812
+	sym = Mk1FuselageStructural_4292945998
+	attN = bottom,stackSeparator_4292949868
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292955896
+	partName = Part
+	pos = 4.66981,5.497844,6.042791
+	rot = -0.296779,0.61734,0.1363279,-0.7157016
+	attRot = -0.03104434,0.4499673,-0.1294065,-0.8830744
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292950532
+	sym = trussPiece1x_4292944608
+	srfN = srfAttach,structuralIBeam3_4292958674
+	attN = top,stackSeparator_4292950532
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = stackSeparator_4292950532
+	partName = Part
+	pos = 4.542616,6.082012,6.48324
+	rot = -0.3263584,0.2964607,0.01237804,-0.8974679
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 6
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292946524
+	sym = stackSeparator_4292944584
+	attN = bottom,trussPiece1x_4292955896
+	attN = top,Mk1FuselageStructural_4292946524
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292946524
+	partName = Strut
+	pos = 4.348495,6.973556,7.155439
+	rot = -0.3263586,0.2964607,0.01237805,-0.8974679
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292933626
+	link = sepMotor1_4292933156
+	sym = Mk1FuselageStructural_4292944544
+	attN = bottom,stackSeparator_4292950532
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292944608
+	partName = Part
+	pos = -5.36366,5.497845,6.042791
+	rot = 0.2967791,0.61734,0.1363281,0.7157013
+	attRot = 0.03104434,-0.4499673,0.1294065,-0.8830744
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292944584
+	sym = trussPiece1x_4292955896
+	srfN = srfAttach,structuralIBeam3_4292958968
+	attN = top,stackSeparator_4292944584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = stackSeparator_4292944584
+	partName = Part
+	pos = -5.236465,6.082013,6.48324
+	rot = 0.3263586,0.2964607,0.01237817,0.8974677
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 7
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292944544
+	sym = stackSeparator_4292950532
+	attN = bottom,trussPiece1x_4292944608
+	attN = top,Mk1FuselageStructural_4292944544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292944544
+	partName = Strut
+	pos = -5.042346,6.973557,7.15544
+	rot = 0.3263586,0.2964607,0.01237813,0.8974677
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292933790
+	link = sepMotor1_4292933484
+	sym = Mk1FuselageStructural_4292946524
+	attN = bottom,stackSeparator_4292944584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292955420
+	partName = Part
+	pos = 3.017473,5.325322,6.178251
+	rot = 0.09491628,0.8005431,0.4808466,0.3448312
+	attRot = 0.03489108,0.2848056,0.4208211,0.8605688
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292949962
+	sym = trussPiece1x_4292943040
+	srfN = srfAttach,structuralIBeam3_4292959028
+	attN = top,stackSeparator_4292949962
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4292943040
+	partName = Part
+	pos = -3.711323,5.325322,6.178251
+	rot = -0.09491619,0.8005431,0.4808464,-0.344831
+	attRot = -0.03489108,-0.2848056,-0.4208211,0.8605688
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = stackSeparator_4292942694
+	sym = trussPiece1x_4292955420
+	srfN = srfAttach,structuralIBeam3_4292959164
+	attN = top,stackSeparator_4292942694
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = stackSeparator_4292949962
+	partName = Part
+	pos = 2.884067,5.711133,6.798555
+	rot = 0.8710923,0.08581634,0.03123452,-0.4825538
+	attRot = 0.9063079,0,0,0.4226182
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 13
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292942532
+	sym = stackSeparator_4292942694
+	attN = bottom,Mk1FuselageStructural_4292942532
+	attN = top,trussPiece1x_4292955420
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = stackSeparator_4292942694
+	partName = Part
+	pos = -3.577916,5.711133,6.798555
+	rot = 0.8710923,-0.08581629,-0.03123456,-0.482554
+	attRot = -0.9063079,0,0,0.4226182
+	mir = 1,1,1
+	istg = 0
+	dstg = 1
+	sidx = 12
+	sqor = 0
+	attm = 0
+	link = Mk1FuselageStructural_4292942224
+	sym = stackSeparator_4292949962
+	attN = bottom,Mk1FuselageStructural_4292942224
+	attN = top,trussPiece1x_4292943040
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292942532
+	partName = Strut
+	pos = 2.680465,6.299948,7.745248
+	rot = 0.4832259,-0.03821272,0.08194736,0.8708143
+	attRot = -0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292932450
+	link = sepMotor1_4292932214
+	sym = Mk1FuselageStructural_4292942224
+	attN = bottom,stackSeparator_4292949962
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = Mk1FuselageStructural_4292942224
+	partName = Strut
+	pos = -3.374315,6.299948,7.745249
+	rot = 0.483226,0.03821277,-0.08194739,0.8708142
+	attRot = 0.3420202,0,0,0.9396927
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = sepMotor1_4292932614
+	link = sepMotor1_4292932296
+	sym = Mk1FuselageStructural_4292942532
+	attN = bottom,stackSeparator_4292942694
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = sepMotor1_4292934398
+	partName = Part
+	pos = -7.216536,6.993962,7.970472
+	rot = 0.2988364,-0.6408563,-0.2988365,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 0
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933962
+	srfN = srfAttach,Mk1FuselageStructural_4292946640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933962
+	partName = Part
+	pos = 6.522687,6.993962,7.970471
+	rot = 0.2988366,0.6408564,0.2988364,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 1
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292934398
+	srfN = srfAttach,Mk1FuselageStructural_4292946932
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933790
+	partName = Part
+	pos = -5.5038,7.558415,7.287819
+	rot = 0.09642389,-0.7901579,-0.3120348,0.51864
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 8
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933626
+	srfN = srfAttach,Mk1FuselageStructural_4292944544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933626
+	partName = Part
+	pos = 4.809951,7.558415,7.287818
+	rot = 0.09642392,0.7901579,0.3120349,0.5186399
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 9
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933790
+	srfN = srfAttach,Mk1FuselageStructural_4292946524
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933484
+	partName = Part
+	pos = -4.500474,7.07169,7.751879
+	rot = 0.3263589,0.2964606,0.01237805,0.8974676
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 10
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933156
+	srfN = srfAttach,Mk1FuselageStructural_4292944544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933156
+	partName = Part
+	pos = 3.806624,7.07169,7.751878
+	rot = 0.3263589,-0.2964606,-0.01237808,0.8974677
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 11
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933484
+	srfN = srfAttach,Mk1FuselageStructural_4292946524
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292933010
+	partName = Part
+	pos = -6.015532,6.844577,7.930033
+	rot = 0.2988365,0.6408565,0.2988365,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 14
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932764
+	srfN = srfAttach,Mk1FuselageStructural_4292946640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932764
+	partName = Part
+	pos = 5.321683,6.844578,7.930033
+	rot = 0.2988364,-0.6408564,-0.2988365,0.6408563
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 15
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292933010
+	srfN = srfAttach,Mk1FuselageStructural_4292946932
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932614
+	partName = Part
+	pos = -3.879905,6.546081,8.27451
+	rot = 0.2837468,-0.5887381,-0.3996381,0.6427791
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 16
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932450
+	srfN = srfAttach,Mk1FuselageStructural_4292942224
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932450
+	partName = Part
+	pos = 3.186056,6.546081,8.27451
+	rot = 0.2837467,0.5887381,0.3996381,0.6427791
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 17
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932614
+	srfN = srfAttach,Mk1FuselageStructural_4292942532
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932296
+	partName = Part
+	pos = -2.730401,6.297702,7.972475
+	rot = 0.3996381,0.6427794,0.2837469,0.5887381
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 18
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932214
+	srfN = srfAttach,Mk1FuselageStructural_4292942224
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932214
+	partName = Part
+	pos = 2.036552,6.297702,7.972474
+	rot = 0.3996382,-0.6427792,-0.2837467,0.588738
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 19
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932296
+	srfN = srfAttach,Mk1FuselageStructural_4292942532
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292932056
+	partName = Part
+	pos = -1.342364,6.836382,7.977971
+	rot = 0.2988364,0.6408564,0.2988362,0.6408563
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 20
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292931974
+	srfN = srfAttach,Mk1FuselageStructural_4292945554
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292931974
+	partName = Part
+	pos = 0.6485155,6.836382,7.97797
+	rot = 0.2988365,-0.6408565,-0.2988364,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 21
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292932056
+	srfN = srfAttach,Mk1FuselageStructural_4292945998
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292931812
+	partName = Part
+	pos = -2.54337,7.119493,8.089138
+	rot = 0.2988362,-0.6408563,-0.2988364,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 22
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292931320
+	srfN = srfAttach,Mk1FuselageStructural_4292945554
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = sepMotor1_4292931320
+	partName = Part
+	pos = 1.849522,7.119494,8.089138
+	rot = 0.2988364,0.6408565,0.2988364,0.6408564
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 23
+	sqor = 0
+	attm = 1
+	sym = sepMotor1_4292931812
+	srfN = srfAttach,Mk1FuselageStructural_4292945998
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
